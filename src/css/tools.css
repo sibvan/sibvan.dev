@@ -1,0 +1,89 @@
+.tools__title-h2 {
+  margin-bottom: 32px;
+}
+
+.tools-list {
+  font-size: var(--tools-font-size);
+  line-height: 100%;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.toolst-list__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tools-list__li_left {
+  position: sticky;
+  top: calc(var(--h1-font-size) + 32px + 118.5px);
+}
+
+.tools__lists {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.toolst-list__ul_grey {
+  opacity: 0.5;
+}
+
+.tools-list__li_javascript {
+  color: #f7df1e;
+}
+.tools-list__li_html {
+  color: #f16529;
+}
+.tools-list__li_css {
+  color: #2965f1;
+}
+.tools-list__li_figma-1 {
+  color: #f24e1e;
+}
+.tools-list__li_figma-2 {
+  color: #ff7262;
+}
+.tools-list__li_figma-3 {
+  color: #a259ff;
+}
+.tools-list__li_figma-4 {
+  color: #1abcfe;
+}
+.tools-list__li_figma-5 {
+  color: #0acf83;
+}
+.tools-list__li_chrome-devtools {
+  color: #1a73e8;
+}
+.tools-list__li_gitlab-1 {
+  color: #fc6d26;
+}
+.tools-list__li_gitlab-2 {
+  color: #fca326;
+}
+.tools-list__li_vite {
+  color: #fcc72b;
+}
+.tools-list__li_emmet {
+  color: #baffa9;
+}
+.tools-list__li_github {
+  color: 3e75C3;
+}
+.tools-list__li_lighthouse-1 {
+  color: #f4481e;
+}
+.tools-list__li_lighthouse-2 {
+  color: #0535c1;
+}
+.tools-list__li_pixel-perfect {
+  color: #ff83af;
+}
+.tools-list__li_vs-code {
+  color: #3c99d4;
+}
+.tools-list__li_rest-api {
+  color: #69e3ff;
+}

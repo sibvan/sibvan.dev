@@ -1,0 +1,41 @@
+.code {
+  overflow-x: scroll;
+}
+
+.code__str {
+  font-size: var(--code-font-size);
+  line-height: 145%;
+  white-space: pre;
+}
+
+.about-me__title-h2 {
+  margin-bottom: 32px;
+}
+
+.code__str_digit {
+  opacity: 0.2;
+}
+
+.code__str_purple {
+  color: #c678dd;
+}
+
+.code__str_blue {
+  color: #61afef;
+}
+
+.code__str_grey {
+  opacity: 0.5;
+}
+
+.code__str_red {
+  color: #ff5d5d;
+}
+
+.code__str_orange {
+  color: #d19a66;
+}
+
+.code__str_green {
+  color: #98c379;
+}

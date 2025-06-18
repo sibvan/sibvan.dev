@@ -1,0 +1,48 @@
+:root {
+  --h1-font-size: calc(100vw * 200.4 / 1710);
+  --code-font-size: max(calc(calc(100vw * 50.07 / 1710)), 24px);
+  --tools-font-size: calc(calc(100vw * 84.8 / 1710));
+  --footer-text-font-size: calc(calc(100vw * 95.85 / 1710));
+
+}
+
+body {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background: #282a2e;
+  color: #fff;
+  min-width: 320px;
+}
+
+#app {
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.title-h2 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  font-size: var(--h1-font-size);
+  line-height: 100%;
+  text-transform: uppercase;
+  color: transparent;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 118.5px;
+}
+
+
+@media (max-width: 896px) {
+
+:root {
+  --footer-text-font-size: calc(calc(100vw * 46.9 / 320));
+}
+}
+
+

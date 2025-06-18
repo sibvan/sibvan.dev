@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  gap: 8px;
+    flex-wrap: wrap;
+}
+
+.header {
+  font-size: 16px;
+  line-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logo__slash {
+  opacity: 0.2;
+}
+
+.logo__desc {
+  opacity: 0.5;
+  white-space: pre-wrap;
+}
+
+.header__link {
+  color: #61AFEF;
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(97, 175, 239, 0);
+  transition: text-decoration-color .2s ease-in-out;
+}
+
+
+.header__link:hover {
+  text-decoration-color: rgba(97, 175, 239, 1);
+
+}

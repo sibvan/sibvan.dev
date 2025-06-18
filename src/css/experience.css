@@ -1,0 +1,115 @@
+.experience__title-h2 {
+  margin-bottom: 32px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  position: relative;
+  grid-gap: 16px;
+  column-gap: 166.5px;
+}
+.timeline-item__year {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  font-size: var(--tools-font-size);
+  line-height: 100%;
+  opacity: 0.5;
+}
+.timeline-item__title {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: max(calc(var(--tools-font-size) / 2), 24px);
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.timeline-item__description {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 16px;
+  line-height: 145%;
+}
+
+.timeline-item::after {
+  content: "";
+  display: block;
+  width: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  height: calc(100% - var(--tools-font-size) - 24px);
+  position: absolute;
+  bottom: 0;
+  left: calc(var(--tools-font-size) / 3.2615384615);
+}
+
+.timeline-item:nth-last-child(2)::after {
+  height: calc(100% - 24px);
+  top: 0;
+}
+
+.timeline-item_void {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-item_void::after {
+  height: 100%;
+}
+
+.timeline-item:last-child::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+@media (max-width: 1367px) {
+  .timeline-item {
+    column-gap: 24px;
+  }
+  .timeline-item__description {
+    grid-column-start: 1;
+  }
+
+  .timeline-item:first-child:after {
+    display: none;
+  }
+  .timeline-item:nth-child(2):after {
+    height: calc(100% - 24px);
+  }
+
+  .timeline-item:last-child::after {
+    display: none;
+  }
+}
+
+@media (max-width: 580.5px) {
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .timeline-item__year {
+    margin-bottom: 8px;
+  }
+
+  .timeline-item__title {
+    margin-bottom: 16px;
+  }
+
+  .timeline-item__description_void {
+    width: 50%;
+  }
+}

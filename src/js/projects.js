@@ -1,43 +1,30 @@
-export class TextChanger {
-  linkEl = document.querySelector("[data-js-sibvan]");
-  linkElText = document.querySelector("[data-js-sibvan-text]");
-  speed = 100;
+const linkElText = document.querySelector("[data-js-sibvan-text]");
+const speed = 50;
 
-  constructor() {
-    this.bindEvents();
+export const changeText = (text) => {
+  const arr = [...text];
+  if (arr.length === 0) {
+    printNewText();
+    return;
   }
 
-  deleteText = (arr) => {
-    if (arr.length === 0) {
-      this.printNewText();
-      return;
-    }
+  arr.pop();
+  linkElText.textContent = arr.join("");
 
-    arr.pop();
-    this.linkElText.textContent = arr.join("");
+  setTimeout(() => {
+    changeText(arr);
+  }, speed);
+};
 
+const printNewText = () => {
+  const text = "Вы уже тут".split("");
+
+  let newStr = "";
+
+  text.forEach((letter, index) => {
     setTimeout(() => {
-      this.deleteText(arr);
-    }, this.speed);
-  };
-
-  printNewText = () => {
-    const text = "Вы уже тут".split("");
-
-    let newStr = "";
-
-    text.forEach((letter, index) => {
-      setTimeout(() => {
-        newStr += letter;
-        this.linkElText.textContent = newStr;
-      }, index * this.speed);
-    });
-  };
-
-  bindEvents() {
-    this.linkEl.addEventListener("click", (clickEvent) => {
-      clickEvent.preventDefault();
-      this.deleteText(this.linkElText.textContent.split(""));
-    });
-  }
-}
+      newStr += letter;
+      linkElText.textContent = newStr;
+    }, index * speed);
+  });
+};

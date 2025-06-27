@@ -1,6 +1,7 @@
 import { setHeroMargin } from "./hero.js";
 import { changeText } from "./projects.js";
 const linkEl = document.querySelector("[data-js-sibvan]");
+document.querySelector(".burqa").style.opacity = 0;
 
 window.addEventListener("resize", setHeroMargin);
 window.addEventListener("load", setHeroMargin);

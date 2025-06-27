@@ -14,7 +14,8 @@
   display: flex;
   gap: 166.5px;
   transition: all 1s ease-in-out;
-  opacity: 0;
+  opacity: .1;
+  margin-top: 118.5px;
 }
 
 .hero__title-video-wrapper {

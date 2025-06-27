@@ -4,7 +4,7 @@ const linkEl = document.querySelector("[data-js-sibvan]");
 
 window.addEventListener("resize", setHeroMargin);
 window.addEventListener("load", () => {
-  document.querySelector(".burqa").style.opacity = 0;
+  document.querySelector(".burqa").style.display = "none";
   setHeroMargin();
 });
 linkEl.addEventListener("click", (clickEvent) => {

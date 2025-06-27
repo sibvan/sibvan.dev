@@ -3,7 +3,6 @@
   --code-font-size: max(calc(calc(100vw * 50.07 / 1710)), 24px);
   --tools-font-size: calc(calc(100vw * 84.8 / 1710));
   --footer-text-font-size: calc(calc(100vw * 95.85 / 1710));
-
 }
 
 body {
@@ -37,14 +36,11 @@ main {
   gap: 118.5px;
 }
 
-
 @media (max-width: 896px) {
-
-:root {
-  --footer-text-font-size: calc(calc(100vw * 46.9 / 320));
+  :root {
+    --footer-text-font-size: calc(calc(100vw * 46.9 / 320));
+  }
 }
-}
-
 
 .burqa {
   width: 100vw;
@@ -52,4 +48,28 @@ main {
   background-color: #282a2e;
   position: fixed;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burqa::before {
+  content: "·";
+  font-size: var(--h1-font-size);
+text-shadow:
+  -1px -1px 0 #fff,
+   1px -1px 0 #fff,
+  -1px  1px 0 #fff,
+   1px  1px 0 #fff;
+  color: #282a2e;
+  animation: rotating 1s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -32,6 +32,10 @@
   background: #d19a66;
 }
 
+.project_purple {
+  background: #c678dd;
+}
+
 .project__title {
   font-size: var(--code-font-size);
   text-transform: uppercase;

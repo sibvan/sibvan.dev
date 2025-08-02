@@ -1,6 +1,6 @@
 :root {
   --h1-font-size: calc(100vw * 200.4 / 1710);
-  --code-font-size: max(calc(calc(100vw * 50.07 / 1710)), 24px);
+  --code-font-size: max(calc(calc(100vw * 51.27 / 1710)), 24px);
   --tools-font-size: calc(calc(100vw * 84.8 / 1710));
   --footer-text-font-size: calc(calc(100vw * 95.85 / 1710));
 }

@@ -36,10 +36,15 @@
   background: #c678dd;
 }
 
+.project_green {
+  background: #98C379;
+}
+
 .project__title {
   font-size: var(--code-font-size);
   text-transform: uppercase;
   margin-bottom: 16px;
+  width: calc(100% - 24px - 8px);
 }
 .project__desc {
   font-size: 16px;

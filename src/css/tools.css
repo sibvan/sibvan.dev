@@ -87,3 +87,12 @@
 .tools-list__li_rest-api {
   color: #69e3ff;
 }
+
+.tools-list__li_vue {
+  color: #42B883;
+}
+
+.tools-list__li_pinia {
+  color: #FFC73B;
+}
+
